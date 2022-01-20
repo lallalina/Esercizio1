@@ -1,0 +1,33 @@
+
+import 'dart:io';
+void main() {
+  
+ var number_step=0;
+List <String> step = [];
+ var livel=0;
+ int? n=0;
+ string? valore=0;
+ 
+ print("quanti step vuoi far fare a Gary?");
+ //leggi n
+ n=int.parse(stdin.readLineSync()!);
+  
+ print("inserisci i valori:");
+ 
+  //aggiungi elementi alla lista 
+ for (var i=0; i<n; i++){
+   valore= stdin.readLineSync()!);
+   step[i]=valore;
+ } 
+ 
+ //conteggio
+for (var i= 0; i<n; i++){
+    if (step[i] == 'U'){
+      livel++;
+    } else{
+      livel--;
+    }
+}
+  
+ print(livel);
+}
